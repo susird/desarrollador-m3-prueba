@@ -1,0 +1,25 @@
+.title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  margin: 0px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.article-box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+}
+
+.button-filter {
+  height: 40px;
+  width: 140px;
+  border: 1px solid gray;
+  background: transparent;
+}

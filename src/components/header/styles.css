@@ -1,0 +1,14 @@
+.header {
+  border-bottom: 1px solid gray;
+  display: flex;
+  padding: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo-image {
+  width: 100px;
+  height: 25px;
+}
