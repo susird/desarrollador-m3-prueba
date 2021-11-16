@@ -1,0 +1,104 @@
+{
+  "products":
+  [
+    {
+      "sku": "1",
+      "producName": "CAMISETA MESCLA",
+      "price": "R$ 28,00",
+      "color": "Cinza",
+      "size": "M",
+      "wholesale": "até 3x de R$9,33",
+      "images": {
+        "product": "src/imagens/img_2.png"
+      }
+    },
+    {
+      "sku": "2",
+      "producName": "SAIA EM COURO",
+      "price": "R$ 398,00",
+      "color": "Café",
+      "size": "P",
+      "wholesale": "até 5x de R$30,00",
+      "images": {
+        "product": "src/imagens/img_3.png"
+      }
+    },
+    {
+      "sku": "3",
+      "producName": "CARDIGAN TIGRE",
+      "price": "R$ 398,00",
+      "color": "Laranja", 
+      "size": "U",
+      "wholesale": "até 5x de R$30,00",
+      "images": {
+        "product": "src/imagens/img_4.png"
+      }
+    },
+    {
+      "sku": "4",
+      "producName": "CARDIGAN OFF WHITE",
+      "price": "R$ 99,90",
+      "color": "Branco",       
+      "size": "GG",
+      "wholesale": "até 3x de R$33,30",
+      "images": {
+        "product": "src/imagens/img_5.png"
+      }
+    },
+    {
+      "sku": "5",
+      "producName": "BODY LEOPARDO",
+      "price": "R$ 129,90",
+      "color": "Café",
+      "size": "S",
+      "wholesale": "até 3x de R$43,43",
+      "images": {
+        "product": "src/imagens/img_6.png"
+      }
+    },
+    {
+      "sku": "6",
+      "producName": "CASACO PELOS",
+      "price": "R$ 398,00",
+      "color": "Rosado",
+      "size": "G",
+      "wholesale": "até 5x de R$30,00",
+      "images": {
+        "product": "src/imagens/img_7.png"
+      }
+    },
+    {
+      "sku": "7",
+      "producName": "CROPPED STRIPES",
+      "price": "R$ 120,00",
+      "color": "Laranja",
+      "size": "M",
+      "wholesale": "até 3x de R$40,00",
+      "images": {
+        "product": "src/imagens/img_8.png"
+      }
+    },
+    {
+      "sku": "8",
+      "producName": "CAMISA TRANSPARENTE",
+      "price": "R$ 398,00",
+      "color": "Preto",
+      "size": "P",
+      "wholesale": "até 5x de R$30,00",
+      "images": {
+        "product": "src/imagens/img_9.png"
+      }
+    },
+    {
+      "sku": "9",
+      "producName": "POCHETE CLUTCH",
+      "price": "R$ 99,00",
+      "color": "Preto",
+      "size": "U",
+      "wholesale": "até 3x de R$33,00",
+      "images": {
+        "product": "src/imagens/img_10.png"
+      }
+    }
+  ]
+}
