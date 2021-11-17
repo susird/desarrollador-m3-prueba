@@ -1,13 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './styles.css';
-import cardOne from '../../imagens/img_2.png'
-import cardTwo from '../../imagens/img_3.png'
+import { URL_API, PUBLIC_URL } from './utils';
 
 export const Cards = () => {
+  const [data, setData] = useState(null);
+
+
+  useEffect(() => {
+    fetch(URL_API).then((res) => res.json()).then((res) => {
+      setData(res);
+    })
+  }, [])
   return (
     <article className="card-box">
-      <img className="card-img" src={cardOne} alt="card one"></img>
-      <img className="card-img" src={cardTwo} alt="card one"></img>
+      {data && data.length ? data.map(card =>
+        <article key={card.sku}>
+          <img className="card-img" src={PUBLIC_URL + card.images.product} alt="card one" />
+          <h3>{card.productName}</h3>
+          <p>{card.price}</p>
+          <p>{card.wholesale}</p>
+          <button>COMPRAR</button>
+        </article>
+      )
+        : "loading..."}
     </article>
   )
 }
