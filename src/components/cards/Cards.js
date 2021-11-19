@@ -14,12 +14,12 @@ export const Cards = () => {
   return (
     <article className="card-box">
       {data && data.length ? data.map(card =>
-        <article key={card.sku}>
+        <article className="card-content" key={card.sku}>
           <img className="card-img" src={PUBLIC_URL + card.images.product} alt="card one" />
-          <h3>{card.productName}</h3>
-          <p>{card.price}</p>
-          <p>{card.wholesale}</p>
-          <button>COMPRAR</button>
+          <h3 className="product-name">{card.producName}</h3>
+          <p className="price">{card.price}</p>
+          <p className="wholesale">{card.wholesale}</p>
+          <button className="buy-button">COMPRAR</button>
         </article>
       )
         : "loading..."}

@@ -1,11 +1,40 @@
 .card-box {
   display: grid;
+  line-height: 25%;
   grid-template-columns: 50% 50%;
   padding: 20px;
   width: 100%;
 }
 
+.card-content {
+  margin-bottom: 40px;
+}
+
 .card-img {
   height: 200px;
-  width: 126px;
+  width: 130px;
+}
+
+.product-name {
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.wholesale {
+  font-size: 12px;
+}
+
+.buy-button {
+  background: black;
+  border: 1px solid gray;
+  color: white;
+  font-weight: bold;
+  height: 38px;
+  width: 160px;
 }
