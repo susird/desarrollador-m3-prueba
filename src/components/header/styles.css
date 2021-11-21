@@ -1,0 +1,23 @@
+.header {
+  border-bottom: 1px solid gray;
+  display: flex;
+  padding: 10px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  z-index: 1;
+}
+
+.logo-image {
+  width: 100px;
+  height: 25px;
+}
+
+@media (min-width: 920px) {
+  .logo-image {
+    width: 120px;
+    height: 37px;
+    padding-left: 60px;
+  }
+
+}

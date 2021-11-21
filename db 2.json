@@ -1,0 +1,23 @@
+{
+  "products":
+  [
+    {
+      "id": 1,
+      "name": "CAMISETA MESCLA",
+      "price": "R$ 28,00",
+      "wholesale": "até 3x de R$9,33",
+      "images": {
+        "product": "src/imagens/img_2.png"
+      }
+    },
+    {
+      "id": 1,
+      "name": "SAIA EM COURO",
+      "price": "R$ 398,00",
+      "wholesale": "até 5x de R$30,00",
+      "images": {
+        "product": "src/imagens/img_3.png"
+      }
+    }
+  ]
+}
