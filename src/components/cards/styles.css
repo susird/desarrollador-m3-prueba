@@ -38,3 +38,10 @@
   height: 38px;
   width: 160px;
 }
+
+
+@media (min-width: 920px) {
+  .card-box {
+    grid-template-columns: 25% auto 25%;
+  }
+}
