@@ -2,9 +2,21 @@ import React, { useState } from 'react';
 import './styles.css';
 import {useViewport} from '../../hooks/useViewport';
 
-export const Filters = () => {
+export const Filters = ({setFilter}) => {
   const [toggle, setToggle] = useState(false);
   const { width } = useViewport();
+
+  const handleFilter = (event) => {
+    const { name, value } = event.target;
+    setFilter(state => ({
+      ...state,
+      prop: 'color',
+      value: name,
+      data: state.data.filter(product => product.color.toLowerCase() === name.toLowerCase())
+    }))
+  }
+
+
   return (
     <article className="filter-box">
       <h1 className="title">Blusas</h1>
@@ -13,17 +25,17 @@ export const Filters = () => {
         <button className="button-filter">Ordenar</button>
       </article>
       {(toggle || width >= 920) &&  <form className="button-filters-pc">
-        <fieldset className="colors-filter">
+        <fieldset className="colors-filter" onClick={(event) => handleFilter(event)}>
           <legend>CORES</legend>
-          <input type="checkbox" id="yellow" name="scales"/>
+          <input type="checkbox" id="yellow" name="Amarelo"/>
           <label for="yellow">Amarelo</label>
-          <input type="checkbox" id="blue" name="scales"/>
+          <input type="checkbox" id="blue" name="Azul"/>
           <label for="blue">Azul</label>
-          <input type="checkbox" id="white" name="scales"/>
+          <input type="checkbox" id="white" name="Branco"/>
           <label for="white">Branco</label>
-          <input type="checkbox" id="gray" name="scales"/>
-          <label for="gray">Cinza</label>
-          <input type="checkbox" id="orange" name="scales"/>
+          <input type="checkbox" id="gray" name="Cinza"/>
+          <label for="Cinza">Cinza</label>
+          <input type="checkbox" id="orange" name="Laranja"/>
           <label for="orange">Laranja</label>
         </fieldset>
         <fieldset className="size-filter">

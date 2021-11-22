@@ -1,16 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './styles.css';
-import { URL_API, PUBLIC_URL } from './utils';
+import { PUBLIC_URL } from './utils';
 
-export const Cards = () => {
-  const [data, setData] = useState(null);
-
-
-  useEffect(() => {
-    fetch(URL_API).then((res) => res.json()).then((res) => {
-      setData(res);
-    })
-  }, [])
+export const Cards = ({data}) => {
+ 
   return (
     <article className="card-box">
       {data && data.length ? data.map(card =>
