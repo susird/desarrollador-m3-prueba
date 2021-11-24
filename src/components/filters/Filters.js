@@ -27,53 +27,55 @@ export const Filters = ({setFilter}) => {
       {(toggle || width >= 920) &&  <form className="button-filters-pc">
         <fieldset className="colors-filter" onClick={(event) => handleFilter(event)}>
           <legend>CORES</legend>
-          <input type="checkbox" id="yellow" name="Amarelo"/>
-          <label for="yellow">Amarelo</label>
-          <input type="checkbox" id="blue" name="Azul"/>
-          <label for="blue">Azul</label>
-          <input type="checkbox" id="white" name="Branco"/>
+          <input className="checkbox" type="checkbox" id="yellow" name="Café"/>
+          <label for="yellow">Café</label>
+          <input className="checkbox" type="checkbox" id="blue" name="Rosado"/>
+          <label for="blue">Rosado</label>
+          <input className="checkbox" type="checkbox" id="white" name="Branco"/>
           <label for="white">Branco</label>
-          <input type="checkbox" id="gray" name="Cinza"/>
+          <input className="checkbox" type="checkbox" id="gray" name="Cinza"/>
           <label for="Cinza">Cinza</label>
-          <input type="checkbox" id="orange" name="Laranja"/>
+          <input className="checkbox" type="checkbox" id="orange" name="Laranja"/>
           <label for="orange">Laranja</label>
+          <input className="checkbox" type="checkbox" id="black" name="Preto"/>
+          <label for="black">Preto</label>
         </fieldset>
         <fieldset className="size-filter">
         <legend>TAMANHOS</legend>
-          <input type="checkbox" placeholder="P" id="small"/>
-          <label for="small">P</label>
-          <input type="checkbox" placeholder="M" id="medium"/>
-          <label for="medium">M</label>
-          <input type="checkbox" placeholder="G" id="large"/>
-          <label for="large">G</label>
-          <input type="checkbox" placeholder="GG" id="extra-large"/>
-          <label for="extra-large">GG</label>
-          <input type="checkbox" placeholder="U" id="unique"/>
-          <label for="unique">U</label>
-          <input type="checkbox" placeholder="36" id="thirty-six"/>
-          <label for="thirty-six">36</label>
-          <input type="checkbox" placeholder="38" id="thirty-eight"/>
-          <label for="thirty-eight">38</label>
-          <input type="checkbox" placeholder="40" id="forty"/>
-          <label for="forty">40</label>
-          <input type="checkbox" placeholder="42" id="forty-two"/>
-          <label for="forty-two">42</label>
-          <input type="checkbox" placeholder="44" id="forty-four"/>
-          <label for="forty-four">44</label>
-          <input type="checkbox" placeholder="46" id="forty-six"/>
-          <label for="forty-six">46</label>
+          <input className="checkbox-size" type="checkbox" placeholder="P" id="small"/>
+          <label className="label-size" for="small">P</label>
+          <input className="checkbox-size" type="checkbox" placeholder="M" id="medium"/>
+          <label className="label-size" for="medium">M</label>
+          <input className="checkbox-size" type="checkbox" placeholder="G" id="large"/>
+          <label className="label-size" for="large">G</label>
+          <input className="checkbox-size" type="checkbox" placeholder="GG" id="extra-large"/>
+          <label className="label-size" for="extra-large">GG</label>
+          <input className="checkbox-size" type="checkbox" placeholder="U" id="unique"/>
+          <label className="label-size" for="unique">U</label>
+          <input className="checkbox-size" type="checkbox" placeholder="36" id="thirty-six"/>
+          <label className="label-size" for="thirty-six">36</label>
+          <input className="checkbox-size" type="checkbox" placeholder="38" id="thirty-eight"/>
+          <label className="label-size" for="thirty-eight">38</label>
+          <input className="checkbox-size" type="checkbox" placeholder="40" id="forty"/>
+          <label className="label-size" for="forty">40</label>
+          <input className="checkbox-size" type="checkbox" placeholder="42" id="forty-two"/>
+          <label className="label-size" for="forty-two">42</label>
+          <input className="checkbox-size" type="checkbox" placeholder="44" id="forty-four"/>
+          <label className="label-size" for="forty-four">44</label>
+          <input className="checkbox-size" type="checkbox" placeholder="46" id="forty-six"/>
+          <label className="label-size" for="forty-six">46</label>
         </fieldset>
         <fieldset className="price-filter">
           <legend>FAIXA DE PREÇOS</legend>
-          <input type="checkbox" id="scales" name="scales"/>
+          <input className="checkbox" type="checkbox" id="scales" name="scales"/>
           <label for="scales">de R$0 até R$50</label>
-          <input type="checkbox" id="scales" name="scales"/>
+          <input className="checkbox" type="checkbox" id="scales" name="scales"/>
           <label for="scales">de R$51 até R$150</label>
-          <input type="checkbox" id="scales" name="scales"/>
+          <input className="checkbox" type="checkbox" id="scales" name="scales"/>
           <label for="scales">de R$151 até R$300</label>
-          <input type="checkbox" id="scales" name="scales"/>
+          <input className="checkbox" type="checkbox" id="scales" name="scales"/>
           <label for="scales">de R$301 até R$500</label>
-          <input type="checkbox" id="scales" name="scales"/>
+          <input className="checkbox" type="checkbox" id="scales" name="scales"/>
           <label for="scales">a partir de R$ 01</label>
         </fieldset>
       </form>}

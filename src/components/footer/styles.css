@@ -1,0 +1,13 @@
+.footer {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  width: 100%;
+}
+
+.footer-text {
+  align-items: center;
+  color: white;
+}

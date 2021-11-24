@@ -1,7 +1,7 @@
 .title {
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
-  margin: 0px;
+  margin-bottom: 20px;
   padding: 10px;
   font-size: 30px;
 }
@@ -17,6 +17,7 @@
 .button-filters-mobile{
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
 }
 
 .button-filter {
@@ -28,7 +29,90 @@
 
 .button-filters-pc {
   display: block;
+  align-items: flex-start;
 }
+
+.colors-filter {
+  color: black;
+  border: none;
+  display: grid;
+  grid-template-columns: 40% 0%;
+  text-align: initial;
+}
+
+.checkbox {
+  appearance: none;
+  border: 1.5px solid #66666683;
+  height: 16px;
+  width: 16px;
+}
+
+.checkbox::after {
+height: 10px;
+margin: 1.5px;
+width: 10px;
+display: flex;
+content: "";
+background-color: white;
+} 
+
+.checkbox:checked::after {
+background-color:  rgb(75 199 219);
+} 
+
+.button-filters-pc {
+  display: flex;
+  flex-direction: column;
+}
+
+.size-filter {
+  align-items: center;
+  border: none;
+  display: grid;
+  grid-template-columns: 0 41% 0 41% 0 41% 10% 0;
+  grid-template-rows: 35% 36% 35%;
+  margin: 20px 0;
+}
+
+.size-filter:checked {
+  color: rgb(79 225 248);
+}
+
+.checkbox-size {
+  appearance: none;
+  border: 1px solid #8080805c;
+  height: 30px;
+  width: 30px;
+
+}
+
+.checkbox-size:checked {
+  border: 2px solid rgb(75 199 219);
+}
+
+.label-size {
+  color: #8080805c ;
+  font-size: 15px;
+}
+
+input[type="checkbox"]:checked+label {
+  color: rgb(0, 0, 0)
+}
+
+/* .label-size:checked {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+} */
+
+.price-filter {
+  color: black;
+  border: none;
+  text-align: start;
+  display: grid;
+  grid-template-columns: 18% 88%;
+}
+  
+
 
 @media (min-width: 920px) {
   .button-filter { 
@@ -37,25 +121,7 @@
 
   .filter-box {
     align-items: flex-start;
+    width: 50%;
   }
 
-  .colors-filter {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .button-filters-pc {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .size-filter {
-    display: grid;
-    grid-template-columns: 25% auto auto 25%;
-  }
-
-  .price-filter {
-    display: flex;
-    flex-direction: column;
-  }
 }
