@@ -4,7 +4,7 @@
     {
       "sku": "1",
       "producName": "CAMISETA MESCLA",
-      "price": "R$ 28,00",
+      "price": "2800",
       "color": "Cinza",
       "size": "M",
       "wholesale": "até 3x de R$9,33",
@@ -15,7 +15,7 @@
     {
       "sku": "2",
       "producName": "SAIA EM COURO",
-      "price": "R$ 398,00",
+      "price": "39800",
       "color": "Café",
       "size": "P",
       "wholesale": "até 5x de R$30,00",
@@ -26,7 +26,7 @@
     {
       "sku": "3",
       "producName": "CARDIGAN TIGRE",
-      "price": "R$ 398,00",
+      "price": "39800",
       "color": "Laranja", 
       "size": "U",
       "wholesale": "até 5x de R$30,00",
@@ -37,7 +37,7 @@
     {
       "sku": "4",
       "producName": "CARDIGAN OFF WHITE",
-      "price": "R$ 99,90",
+      "price": "9990",
       "color": "Branco",       
       "size": "GG",
       "wholesale": "até 3x de R$33,30",
@@ -48,7 +48,7 @@
     {
       "sku": "5",
       "producName": "BODY LEOPARDO",
-      "price": "R$ 129,90",
+      "price": "12990",
       "color": "Café",
       "size": "S",
       "wholesale": "até 3x de R$43,43",
@@ -59,7 +59,7 @@
     {
       "sku": "6",
       "producName": "CASACO PELOS",
-      "price": "R$ 398,00",
+      "price": "39800",
       "color": "Rosado",
       "size": "G",
       "wholesale": "até 5x de R$30,00",
@@ -70,7 +70,7 @@
     {
       "sku": "7",
       "producName": "CROPPED STRIPES",
-      "price": "R$ 120,00",
+      "price": "12000",
       "color": "Laranja",
       "size": "M",
       "wholesale": "até 3x de R$40,00",
@@ -81,7 +81,7 @@
     {
       "sku": "8",
       "producName": "CAMISA TRANSPARENTE",
-      "price": "R$ 398,00",
+      "price": "39800",
       "color": "Preto",
       "size": "P",
       "wholesale": "até 5x de R$30,00",
@@ -92,7 +92,7 @@
     {
       "sku": "9",
       "producName": "POCHETE CLUTCH",
-      "price": "R$ 99,00",
+      "price": "9900",
       "color": "Preto",
       "size": "U",
       "wholesale": "até 3x de R$33,00",
