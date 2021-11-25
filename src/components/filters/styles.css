@@ -1,4 +1,6 @@
 .title {
+  align-items: center;
+  display: flex;
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   margin-bottom: 20px;
@@ -15,6 +17,7 @@
 }
 
 .button-filters-mobile {
+  align-items: center;
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
@@ -38,7 +41,7 @@
   color: black;
   border: none;
   display: grid;
-  grid-template-columns: 40% 0%;
+  grid-template-columns: 10% 0%;
   text-align: initial;
 }
 
@@ -76,12 +79,13 @@
 }
 
 .size-filter {
-  align-items: center;
+  align-items: start;
   border: none;
   display: grid;
-  grid-template-columns: 0 41% 0 41% 0 41% 10% 0;
-  grid-template-rows: 35% 36% 35%;
+  grid-template-columns: 0 13% 0% 13% 0% 13% 0% 0;
+  grid-template-rows: 35% 34% 35%;
   margin: 20px 0;
+  
 }
 
 .size-filter:checked {
@@ -100,6 +104,11 @@
 }
 
 .label-size {
+  margin-right: 13px;
+  font-size: 15px;
+  margin-left: 8px;
+  align-self: center;
+  text-align: initial;
   color: #8080805c;
   font-size: 15px;
 }
@@ -108,17 +117,12 @@ input[type="checkbox"]:checked+label {
   color: rgb(0, 0, 0)
 }
 
-/* .label-size:checked {
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-} */
-
 .price-filter {
   color: black;
   border: none;
   text-align: start;
   display: grid;
-  grid-template-columns: 18% 88%;
+  grid-template-columns: 10% 88%;
 }
 
 .filter-header {
@@ -153,6 +157,13 @@ input[type="checkbox"]:checked+label {
 }
 
 @media (min-width: 920px) {
+  .title {
+    display: flex;
+    padding: 0;
+    justify-content: start;
+    margin: 0;
+    margin-bottom: 20px;
+  }
 
   .button-filters-pc {
     align-items: flex-start;
@@ -163,9 +174,34 @@ input[type="checkbox"]:checked+label {
     display: none;
   }
 
+  .colors-filter {
+    grid-template-columns: 30px 0;
+  }
+
   .filter-box {
     align-items: flex-start;
+    display: block;
     width: 50%;
+  }
+
+  .price-filter {
+    grid-template-columns: 18% 88%;
+  }
+
+  .size-filter {
+    align-items: center;
+    border: none;
+    display: grid;
+    grid-template-columns: 0 15% 0% 15% 0% 15% 0% 0;
+    grid-template-rows: 35% 36% 35%;
+    margin: 20px 0;
+  }
+
+  .label-size { 
+    font-size: 15px;
+    margin-left: 10px;
+    align-self: center;
+    text-align: initial;
   }
 
   .filter-header {

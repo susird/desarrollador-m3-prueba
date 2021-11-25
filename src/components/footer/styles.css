@@ -1,9 +1,10 @@
 .footer {
   align-items: center;
   background-color: black;
-  display: none;
+  display: flex;
+  height: 27px;
   justify-content: center;
-  margin: 20px;
+  margin: 20px 0;
   width: 100%;
 }
 
@@ -12,9 +13,3 @@
   color: white;
 }
 
-@media (min-width: 920px) {
-  .footer {
-    display: flex;
-  }
-
-}
