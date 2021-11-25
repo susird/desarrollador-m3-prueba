@@ -1,7 +1,7 @@
 .footer {
   align-items: center;
   background-color: black;
-  display: flex;
+  display: none;
   justify-content: center;
   margin: 20px;
   width: 100%;
@@ -10,4 +10,11 @@
 .footer-text {
   align-items: center;
   color: white;
+}
+
+@media (min-width: 920px) {
+  .footer {
+    display: flex;
+  }
+
 }

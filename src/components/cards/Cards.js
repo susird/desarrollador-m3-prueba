@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './styles.css';
 import { PUBLIC_URL } from './utils';
 
-export const Cards = ({data}) => {
- 
+export const Cards = ({data, handleBuyItem}) => {
+
   return (
     <article className="card-box">
       {data && data.length ? data.map(card =>
@@ -12,7 +12,7 @@ export const Cards = ({data}) => {
           <h3 className="product-name">{card.producName}</h3>
           <p className="price">R${card.price}</p>
           <p className="wholesale">{card.wholesale}</p>
-          <button className="buy-button">COMPRAR</button>
+          <button className="buy-button" onClick={handleBuyItem}>COMPRAR</button>
         </article>
       )
         : "loading..."}

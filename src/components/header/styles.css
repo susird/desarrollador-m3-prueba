@@ -1,6 +1,7 @@
 .header {
   border-bottom: 1px solid gray;
   display: flex;
+  justify-content: space-between;
   padding: 10px 0;
   position: -webkit-sticky;
   position: sticky;
@@ -9,11 +10,40 @@
 }
 
 .logo-image {
-  width: 100px;
   height: 25px;
+  padding: 0 20px;
+  width: 100px;
 }
 
+.shopping-bag-container {
+  margin-right: 20px;
+  position: relative;
+}
+
+.shopping-bag {
+  height: 25px;
+  padding: 0 20px;
+  width: 25px;
+}
+
+.counter-bag {
+  background-color: rgb(62 215 239);
+  border-radius: 50%;
+  color: white;
+  font-size: 14px;
+  height: 20px;
+  right: 8px;
+  position: absolute;
+  top: 10px;
+  width: 20px;
+}
+
+
 @media (min-width: 920px) {
+  .header {
+    display: flex;
+  }
+
   .logo-image {
     width: 120px;
     height: 37px;

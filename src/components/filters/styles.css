@@ -6,7 +6,7 @@
   font-size: 30px;
 }
 
-.filter-box{
+.filter-box {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@
   position: relative;
 }
 
-.button-filters-mobile{
+.button-filters-mobile {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
@@ -28,8 +28,10 @@
 }
 
 .button-filters-pc {
-  display: block;
-  align-items: flex-start;
+  background-color: white;
+  position: absolute;
+  width: 100%;
+
 }
 
 .colors-filter {
@@ -40,6 +42,14 @@
   text-align: initial;
 }
 
+.header-filters {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .checkbox {
   appearance: none;
   border: 1.5px solid #66666683;
@@ -48,17 +58,17 @@
 }
 
 .checkbox::after {
-height: 10px;
-margin: 1.5px;
-width: 10px;
-display: flex;
-content: "";
-background-color: white;
-} 
+  height: 10px;
+  margin: 1.5px;
+  width: 10px;
+  display: flex;
+  content: "";
+  background-color: white;
+}
 
 .checkbox:checked::after {
-background-color:  rgb(75 199 219);
-} 
+  background-color: rgb(62 215 239);
+}
 
 .button-filters-pc {
   display: flex;
@@ -75,7 +85,7 @@ background-color:  rgb(75 199 219);
 }
 
 .size-filter:checked {
-  color: rgb(79 225 248);
+  color: rgb(62 215 239);
 }
 
 .checkbox-size {
@@ -83,7 +93,6 @@ background-color:  rgb(75 199 219);
   border: 1px solid #8080805c;
   height: 30px;
   width: 30px;
-
 }
 
 .checkbox-size:checked {
@@ -91,7 +100,7 @@ background-color:  rgb(75 199 219);
 }
 
 .label-size {
-  color: #8080805c ;
+  color: #8080805c;
   font-size: 15px;
 }
 
@@ -111,17 +120,56 @@ input[type="checkbox"]:checked+label {
   display: grid;
   grid-template-columns: 18% 88%;
 }
-  
 
+.filter-header {
+  align-items: center;
+  border-bottom: 1px solid #757171;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.filter-title {
+  color: rgb(92, 90, 90);
+  display: flex;
+  font-size: 20px;
+  margin: 0;
+  font-weight: 400;
+  width: 100%;
+}
+
+.close-icon {
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  font-size: 20px;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+}
 
 @media (min-width: 920px) {
-  .button-filter { 
+
+  .button-filters-pc {
+    align-items: flex-start;
+    width: unset;
+  }
+
+  .button-filter {
     display: none;
   }
 
   .filter-box {
     align-items: flex-start;
     width: 50%;
+  }
+
+  .filter-header {
+    display: none;
   }
 
 }

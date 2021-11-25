@@ -3,8 +3,9 @@ import { Cards } from '../cards/Cards';
 import { Filters } from '../filters/Filters';
 import './styles.css';
 import { useProducts } from '../../hooks/useProduct';
+import { LoadingButton } from '../loadingButton/LoadingButton';
 
-export const Main = () => {
+export const Main = ({handleBuyItem}) => {
   const { data } = useProducts();
   const [filter, setFilter] = useState({ prop: '', value: '', data: data })
 
@@ -17,7 +18,10 @@ export const Main = () => {
   return (
     <main className="main">
       <Filters setFilter={setFilter} />
-      <Cards data={filter.data} />
+      <section className="section-card-button">
+        <Cards handleBuyItem={handleBuyItem} data={filter.data} />
+        <LoadingButton />
+      </section>
     </main>
   )
 }

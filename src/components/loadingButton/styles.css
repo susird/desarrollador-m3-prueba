@@ -1,0 +1,8 @@
+.loading-button {
+  color: white;
+  align-self: center;
+  height: 40px;
+  width: 180px;
+  border: none;
+  background: rgb(62 215 239);
+}
