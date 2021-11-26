@@ -10,7 +10,7 @@ export const Filters = ({ setFilter }) => {
   const { width } = useViewport();
 
   const handleFilter = (event) => {
-    const { name, value } = event.target;
+    const { name } = event.target;
     setFilter(state => ({
       ...state,
       prop: 'color',
